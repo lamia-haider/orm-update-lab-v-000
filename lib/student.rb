@@ -60,10 +60,10 @@ class Student
     newstudent.grade = row[2]
     newstudent
   end
-    
-    
-    
-    
+
+
+
+
 
 
 
