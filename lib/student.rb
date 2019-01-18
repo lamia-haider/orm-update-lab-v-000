@@ -26,7 +26,7 @@ class Student
     DROP TABLE IF EXISTS students
     SQL
   end
-  
+
 
   # Remember, you can access your database connection anywhere in this class
   #  with DB[:conn]
