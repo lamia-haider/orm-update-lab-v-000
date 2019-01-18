@@ -62,7 +62,9 @@ class Student
     sql = <<-SQL
     SELECT * FROM students WHERE name = ?
     SQL
-    DB[:conn].execute(sql, self.name)
+    #this outputs an array so we need to break that down
+    found = DB[:conn].execute(sql, name)[0] #array will be within another array as first cell
+    Student.new(found[0], found[1], found[2])
   end
 
 
